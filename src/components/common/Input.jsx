@@ -8,8 +8,11 @@ const Input = ({
   name,
 }) => {
   return (
-    <div className="mb-5">
-      <label className="block text-primary text-xs font-semibold mb-2">
+    <div className="mb-5 relative">
+      <label
+        htmlFor={name}
+        className="absolute -top-2.5 left-3 bg-white px-1 text-xs font-semibold text-primary"
+      >
         {label}
         {required && <span className="text-red-500">*</span>}
       </label>
@@ -20,7 +23,8 @@ const Input = ({
         value={value}
         onChange={onChange}
         required={required}
-        className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-primary focus:border-primary bg-white text-gray-800 placeholder-gray-400 text-sm"
+        id={name}
+        className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary bg-white text-gray-800 text-sm"
       />
     </div>
   );
