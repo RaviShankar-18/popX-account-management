@@ -1,3 +1,4 @@
+```md
 # PopX - Account Management Application
 
 A modern, responsive React application for user authentication and account management. Built with React, React Router, and Tailwind CSS as part of a technical assessment.
@@ -29,13 +30,28 @@ A modern, responsive React application for user authentication and account manag
 
 1. **Clone the repository**
    ```bash
-   git clone <your-repository-url>
+   git clone https://github.com/RaviShankar-18/popX-account-management.git
    cd popx-app
+   ```
+
+2. **Install dependencies**
+   ```bash
    npm install
+   ```
+
+3. **Start development server**
+   ```bash
    npm run dev
+   ```
+
+4. **Open your browser**
+   ```
+   Navigate to http://localhost:5173
+   ```
 
 ## 🏗️ Project Structure
 
+```
 popx-app/
 ├── public/
 ├── src/
@@ -59,3 +75,5 @@ popx-app/
 ├── tailwind.config.js
 ├── postcss.config.js
 └── vite.config.js
+```
+
